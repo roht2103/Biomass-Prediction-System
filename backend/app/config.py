@@ -9,7 +9,7 @@ MODEL_DIR = os.path.join(BASE_DIR, "model")
 MODEL_NAME = "tf_efficientnet_b3.ns_jft_in1k"
 IMG_SIZE = 300
 IN_CHANS = 3
-NUM_FOLDS = 5
+NUM_FOLDS = int(os.environ.get("NUM_FOLDS", 5))
 
 # Target Variables (MUST NOT CHANGE ORDER)
 TARGETS = [
